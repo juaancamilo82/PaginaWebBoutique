@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87bd9d91-3831-4c63-b16b-434ce82c6e32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiProyectoBoutique.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productos.json" beforeDir="false" afterPath="$PROJECT_DIR$/productos.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695259242573-asd.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695259421936-img 1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695259464873-daily11-09-23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695259504135-img 2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695259715305-programacion-sintaxis_1920x1080_xtrafondos.com.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695259840653-daily06-09-23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695259942979-Captura de pantalla 2023-09-09 135956.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695260046080-Captura de pantalla 2023-09-17 160153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695260125684-Captura de pantalla 2023-09-17 160752.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695260553879-Captura de pantalla 2023-09-17 160114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695260587429-programacion-sintaxis_1920x1080_xtrafondos.com.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695260713463-img 1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695262654006-img 1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695263728456-img 2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695264258533-img 1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695264658033-img 2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695264799431-img 2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695264897857-img 2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695265056946-img 1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/resized/1695264897857-img 2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/resized/1695265056946-img 1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -67,7 +84,9 @@
       <updated>1695196286639</updated>
       <workItem from="1695196288007" duration="3516000" />
       <workItem from="1695220024100" duration="8821000" />
-      <workItem from="1695256698784" duration="8207000" />
+      <workItem from="1695256698784" duration="10422000" />
+      <workItem from="1695277385926" duration="214000" />
+      <workItem from="1695325863636" duration="363000" />
     </task>
     <servers />
   </component>

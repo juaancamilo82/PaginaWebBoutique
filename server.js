@@ -78,7 +78,7 @@ app.get('/admin', (req, res) => {
 
 
     </form>
-        ${productListHTML} <!-- Inserta la lista de productos generada aquí -->
+        ${productListHTML} 
         
       </body>
     </html>
@@ -174,8 +174,6 @@ function cargarProductos() {
 
 //  ------------ Función para guardar productos en el archivo JSON ------
 
-
-
 function guardarProductos(productos) {
     try {
         const data = JSON.stringify(productos, null, 2);
@@ -184,8 +182,6 @@ function guardarProductos(productos) {
         console.error('Error al guardar productos:', error);
     }
 }
-
-
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, 'public/images'); // Directorio de destino para las imágenes
@@ -194,15 +190,11 @@ const storage = multer.diskStorage({
         cb(null, Date.now() + '-' + file.originalname); // Nombre de archivo único
     },
 });
-
 // Middleware para cargar imágenes
 const upload = multer({
     storage: storage,
     limits: { fileSize: 500 * 1024 }, // Límite de tamaño en bytes (500 KB)
 });
-
-
-
 
 app.post('/admin/agregar-producto', upload.single('imagen'), async (req, res) => {
 
@@ -222,14 +214,7 @@ app.post('/admin/agregar-producto', upload.single('imagen'), async (req, res) =>
             .resize(300, 300) // Ajusta el tamaño máximo deseado
             .toFile(outputPath); // Guarda la imagen redimensionada en una ruta diferente
     }
-
-
-    // Acceder a la información de la imagen cargada
-    // const nombreImagen = req.file.filename; // Nombre del archivo de imagen
-
     // Obtén los datos del nuevo producto desde el cuerpo de la solicitud
-
-
     console.log('Datos enviados en req.body:', JSON.stringify(req.body, null, 2));
     console.log('Nombre de la imagen:', nombreImagen);
 
@@ -260,18 +245,6 @@ app.post('/admin/agregar-producto', upload.single('imagen'), async (req, res) =>
     // Redirige nuevamente al panel de administrador después de agregar el producto
     res.redirect('/admin');
 });
-
-
-
-
-
-
-
-
-// ----------------------------------------------------------------------------//
-
-
-
 
 
 
