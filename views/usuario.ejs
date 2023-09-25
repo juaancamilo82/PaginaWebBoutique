@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana de Usuario</title>
+    <link rel="stylesheet" href="/css/stylesAdmin.css"> <!-- Agrega la ruta correcta a tus estilos CSS -->
+</head>
+<body>
+<header>
+    <h1>Ventana de Usuario</h1>
+</header>
+<main>
+    <h2>Productos Disponibles</h2>
+    <ul>
+
+            <% productos.forEach(function(producto) { %>
+                <li class="product">
+
+                    <h3><%= producto.nombre %></h3>
+                    <img src="/images/resized/<%= producto.nombreImagen %>" alt="<%= producto.nombre %>">
+                    <p><%= producto.descripcion %></p>
+                    <p>Precio: $<%= producto.precio %></p>
+
+                </li>
+            <% }); %>
+        </ul>
+</main>
+<footer>
+    <!-- Aquí puedes agregar contenido adicional, como información de contacto o enlaces -->
+</footer>
+</body>
+</html>

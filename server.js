@@ -189,3 +189,10 @@ app.post('/admin/editar-producto/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor en ejecución en el puerto ${port}`);
 });
+
+// -------------------- RUTA PARA USUARIO ----------------------
+
+app.get('/usuario', (req, res) => {
+    const productos = cargarProductos(); // Carga la lista de productos desde el archivo JSON
+    res.render('usuario', { productos: productos });
+});
