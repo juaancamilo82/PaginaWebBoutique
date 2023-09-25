@@ -5,30 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87bd9d91-3831-4c63-b16b-434ce82c6e32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/serverPruebas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productos.json" beforeDir="false" afterPath="$PROJECT_DIR$/productos.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695259242573-asd.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695259421936-img 1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695259464873-daily11-09-23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695259504135-img 2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695259715305-programacion-sintaxis_1920x1080_xtrafondos.com.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695259840653-daily06-09-23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695259942979-Captura de pantalla 2023-09-09 135956.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695260046080-Captura de pantalla 2023-09-17 160153.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695260125684-Captura de pantalla 2023-09-17 160752.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695260553879-Captura de pantalla 2023-09-17 160114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695260587429-programacion-sintaxis_1920x1080_xtrafondos.com.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695260713463-img 1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695262654006-img 1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695263728456-img 2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695264258533-img 1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695264658033-img 2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695264799431-img 2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695264897857-img 2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1695265056946-img 1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resized/1695264897857-img 2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resized/1695265056946-img 1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695266348467-imagen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695266375525-imagen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695266411275-imagen4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1695266451188-imagen3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +54,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Camilo Peña Marín/Documents/Desarrollos web/Boutique&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -74,6 +64,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Camilo Peña Marín\Documents\Desarrollos web\Boutique\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="serverPruebas.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/serverPruebas.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,6 +87,8 @@
       <workItem from="1695256698784" duration="10422000" />
       <workItem from="1695277385926" duration="214000" />
       <workItem from="1695325863636" duration="363000" />
+      <workItem from="1695658702226" duration="586000" />
+      <workItem from="1695659301720" duration="19363000" />
     </task>
     <servers />
   </component>

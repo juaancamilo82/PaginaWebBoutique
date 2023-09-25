@@ -1,26 +1,9 @@
 [
-  {
-    "nombre": "Vestido Rojo Pimavera",
-    "descripcion": "Hemoso vestido rojo",
-    "precio": "500",
-    "nombreImagen": "1695266348467-imagen1.png"
-  },
-  {
-    "nombre": "Vestido Azul Cielo",
-    "descripcion": "Hermoso vestido azul ",
-    "precio": "600",
-    "nombreImagen": "1695266375525-imagen2.png"
-  },
-  {
-    "nombre": "Vestido Verde ",
-    "descripcion": "Hermoso vestido verde",
-    "precio": "400",
-    "nombreImagen": "1695266411275-imagen4.jpg"
-  },
-  {
-    "nombre": "Vestido Rosado",
-    "descripcion": "Hermoso vestido Rosado ",
-    "precio": "1000",
-    "nombreImagen": "1695266451188-imagen3.jpg"
-  }
+    {
+        "id": 1695678794554,
+        "nombre": "112",
+        "descripcion": "11",
+        "precio": 11,
+        "nombreImagen": "1695678941165.png"
+    }
 ]

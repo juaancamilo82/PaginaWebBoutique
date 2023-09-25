@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="/css/stylesAdmin.css"> <!-- Agrega aquí tu hoja de estilos CSS -->
+</head>
+<body>
+<h1>Panel de Administrador</h1>
+
+<form action="/admin/agregar-producto" method="POST" enctype="multipart/form-data">
+    <h2>Agregar Producto</h2>
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio" required>
+
+    <label for="imagen">Imagen del Producto:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+    <!--  "required" para asegurar que se incluya la imagen -->
+
+    <button type="submit">Agregar Producto</button>
+</form>
+
+<!-- Lista de productos -->
+<h2>Lista de Productos</h2>
+<ul>
+    <% productos.forEach(function(producto) { %>
+        <li class="product">
+
+            <h3><%= producto.nombre %></h3>
+            <img src="/images/resized/<%= producto.nombreImagen %>" alt="<%= producto.nombre %>">
+            <p><%= producto.descripcion %></p>
+            <p>Precio: $<%= producto.precio %></p>
+            <a href="/admin/eliminar-producto/<%= producto.id %>">Eliminar</a>
+            <a href="/admin/editar-producto/<%= producto.id %>">Editar</a>
+        </li>
+    <% }); %>
+</ul>
+
+<!-- Agrega aquí cualquier otro contenido que desees mostrar -->
+
+<!-- Enlace a tu hoja de scripts JavaScript si es necesario -->
+
+</body>
+</html>
