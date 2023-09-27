@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventana de Usuario</title>
+    <form action="/logout" method="GET">
+        <button type="submit" class="btn-logout">Cerrar Sesión</button>
+    </form>
     <link rel="stylesheet" href="/css/stylesAdmin.css"> <!-- Agrega la ruta correcta a tus estilos CSS -->
 </head>
 <body>
@@ -13,7 +16,6 @@
 <main>
     <h2>Productos Disponibles</h2>
     <ul>
-
             <% productos.forEach(function(producto) { %>
                 <li class="product">
 
@@ -27,7 +29,6 @@
         </ul>
 </main>
 <footer>
-    <!-- Aquí puedes agregar contenido adicional, como información de contacto o enlaces -->
 </footer>
 </body>
 </html>

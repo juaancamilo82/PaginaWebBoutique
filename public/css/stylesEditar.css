@@ -50,3 +50,20 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+/* Estilos para el botón de cierre de sesión */
+.btn-logout {
+    background-color: #ff0000; /* Cambia el color de fondo a tu elección */
+    color: #fff; /* Cambia el color del texto a tu elección */
+    border: none;
+    padding: 5px 10px; /* Ajusta el espaciado interno según tus necesidades */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* Ajusta el tamaño de fuente según tus necesidades */
+    position: fixed;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    right: 10px; /* Ajusta la distancia desde la derecha según tus necesidades */
+}
+
+.btn-logout:hover {
+    background-color: #cc0000; /* Cambia el color de fondo al pasar el cursor */
+}

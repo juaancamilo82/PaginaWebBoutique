@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="87bd9d91-3831-4c63-b16b-434ce82c6e32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesAdmin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesAdmin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesEditar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesEditar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverPruebas.js" beforeDir="false" afterPath="$PROJECT_DIR$/serverPruebas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dashboard-admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/homepage-user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/registro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/usuario.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/usuario.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +88,9 @@
       <workItem from="1695277385926" duration="214000" />
       <workItem from="1695325863636" duration="363000" />
       <workItem from="1695658702226" duration="586000" />
-      <workItem from="1695659301720" duration="20307000" />
+      <workItem from="1695659301720" duration="20453000" />
+      <workItem from="1695699015242" duration="5000" />
+      <workItem from="1695828998149" duration="7681000" />
     </task>
     <servers />
   </component>

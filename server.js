@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const session = require('express-session');
+const flash = require('connect-flash');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
@@ -8,6 +10,7 @@ const sharp = require('sharp');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
+
 
 // Configura el almacenamiento de archivos con multer
 const storage = multer.memoryStorage();
@@ -18,6 +21,92 @@ app.use(express.static('public'));
 
 // Define la ruta del archivo de productos
 const productosFilePath = 'productos.json';
+
+
+// ----------RUTA DE INICIO DE SESIÓN -----------------
+
+app.use(session({
+    secret: 'tu_secreto',
+    resave: false,
+    saveUninitialized: true
+}));
+app.use(flash());
+
+// --------------------
+
+
+// Ruta de inicio de sesión (GET)
+app.get('/login', (req, res) => {
+    res.render('login'); // Crea la vista de inicio de sesión
+});
+// Ruta de administrador (GET)
+app.get('/admin', (req, res) => {
+    const productos = cargarProductos();
+    res.render('admin', { productos: productos });
+});
+
+app.get('/usuario', (req, res) => {
+    const productos = cargarProductos();
+    res.render('usuario', { productos: productos });
+});
+
+// Ruta de inicio de sesión (POST)
+app.post('/login', (req, res) => {
+    const { username, password } = req.body;
+
+    // Busca al usuario en el archivo usuarios.json
+    const usuarios = cargarUsuarios();
+    const usuario = usuarios.find(user => user.username === username && user.password === password);
+
+    if (usuario) {
+        req.session.user = { username: usuario.username, role: usuario.role };
+        if (usuario.role === 'admin') {
+            return res.redirect('/admin');
+        } else {
+            return res.redirect('/usuario');
+        }
+    } else {
+        req.flash('error_msg', 'Credenciales incorrectas');
+        return res.redirect('/login');
+    }
+});
+// Ruta de administrador
+app.get('/admin', (req, res) => {
+    if (req.session.user && req.session.user.username === 'admin') {
+        return res.render('admin');
+    } else {
+        return res.redirect('/login');
+    }
+});
+// Ruta de usuario
+app.get('/usuario', (req, res) => {
+    if (req.session.user && req.session.user.username === 'usuario') {
+        return res.render('usuario');
+    } else {
+        return res.redirect('/login');
+    }
+});
+
+app.get('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            console.error('Error al cerrar sesión:', err);
+        }
+        res.redirect('/login');
+    });
+});
+
+// -------------------- Cargar datos --------------
+
+function cargarUsuarios() {
+    try {
+        const data = fs.readFileSync('usuarios.json', 'utf8');
+        return JSON.parse(data) || [];
+    } catch (error) {
+        console.error('Error al cargar usuarios:', error);
+        return [];
+    }
+}
 
 // Carga los productos desde el archivo JSON
 function cargarProductos() {
@@ -30,10 +119,66 @@ function cargarProductos() {
     }
 }
 
+
+
+// --------------Ruta para la vista de registro (GET) ---------------------
+// Ruta para la vista de registro (GET)
+app.get('/registro', (req, res) => {
+    res.render('registro'); // Renderiza la vista de registro
+});
+
+// Ruta para manejar el registro (POST)
+app.post('/registrarse', (req, res) => {
+    const { username, password, email } = req.body;
+
+    // Cargar usuarios actuales desde el archivo usuarios.json
+    const usuarios = cargarUsuarios();
+
+    // Verificar si el nombre de usuario ya existe
+    if (usuarios.some(usuario => usuario.username === username)) {
+        return res.status(400).send('El nombre de usuario ya existe. Elija otro nombre.');
+    }
+
+    // Crear un nuevo usuario
+    const nuevoUsuario = {
+        username: username,
+        password: password, // ¡Nota importante! Esto no es seguro. Deberías almacenar contraseñas de manera segura (usar bcrypt, por ejemplo).
+        email: email,
+        role: 'usuario',
+    };
+
+    // Agregar el nuevo usuario a la lista de usuarios
+    usuarios.push(nuevoUsuario);
+
+    // Guardar la lista actualizada de usuarios en usuarios.json
+    guardarUsuarios(usuarios);
+
+    // Redirigir a una página de inicio de sesión u otra página deseada
+    res.redirect('/login');
+});
+
+// Función para guardar usuarios en usuarios.json
+function guardarUsuarios(usuarios) {
+    try {
+        fs.writeFileSync('usuarios.json', JSON.stringify(usuarios, null, 4), 'utf8');
+
+        usuario.get().email
+
+    } catch (error) {
+        console.error('Error al guardar usuarios:', error);
+    }
+}
+
+// --------------------------------------------------------------
+
+
+
+
 // Guarda los productos en el archivo JSON
 function guardarProductos(productos) {
     try {
         fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, 4), 'utf8');
+
     } catch (error) {
         console.error('Error al guardar productos:', error);
     }
@@ -57,11 +202,7 @@ app.get('/', (req, res) => {
     res.redirect('/login');
 });
 
-// Ruta de administrador (GET)
-app.get('/admin', (req, res) => {
-    const productos = cargarProductos();
-    res.render('admin', { productos: productos });
-});
+
 
 // Ruta para agregar un producto (POST)
 app.post('/admin/agregar-producto', upload.single('imagen'), (req, res) => {
