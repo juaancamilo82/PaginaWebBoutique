@@ -1,0 +1,25 @@
+.programadores-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.programador {
+    text-align: center;
+    margin: 0 20px; /* Ajusta el espacio entre los programadores */
+}
+
+.avatar {
+    width: 250px; /* Ajusta el tamaño del círculo */
+    height: 250px; /* Ajusta el tamaño del círculo */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.nombre {
+    margin-top: 10px; /* Agrega espacio entre el avatar y el nombre */
+}
+

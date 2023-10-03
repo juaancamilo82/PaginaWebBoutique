@@ -118,7 +118,11 @@ function cargarProductos() {
         return [];
     }
 }
+// ------------- Vista programadores --------
 
+app.get('/programadores', (req, res) => {
+    res.render('programadores'); // Renderiza la vista "programadores.ejs"
+});
 
 
 // --------------Ruta para la vista de registro (GET) ---------------------
